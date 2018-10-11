@@ -1,0 +1,130 @@
+.login{
+    background: linear-gradient(-45deg, #5682a5, #49708f, #385266d9, #698397);
+    background-size: 200%;
+    -webkit-animation: gradient 6s ease infinite;
+    animation: animate 6s ease infinite;
+    min-height: 400px;
+  }
+  .login-form{
+    background-color: #FFF;
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25), 0px 5px 10px rgba(0, 0, 0, 0.25);
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    max-width: 500px;
+  }
+  .login-img {
+    position: absolute;
+    height: 80%;
+    top: 10%;
+    right: 0.5em;
+  }
+  .login-header{
+    height: 3em;
+    margin-bottom: 1em;
+  }
+  .login-header label{
+    text-transform: uppercase;
+    margin-left: 0.5em;
+    letter-spacing: 1.5px;
+    color: #FFF;
+  }
+  
+  
+  /*--------------------------------------------------
+  # General Classes
+  --------------------------------------------------*/
+  body{
+    margin: 0;
+    font-family: sans-serif;
+  }
+  .flexed{
+    display: flex;    
+  }
+  .flexed-column{
+    flex-direction: column;
+  }
+  .flexed-end{
+    justify-content: flex-end;
+  }
+  .flexed-center{
+    justify-content: center;
+    align-items: center;
+  }
+  .flexed-selfcenter{
+    align-self: center;
+  }
+  .bg-darkgreen{
+    background-color: rgb(56, 82, 102);
+  }
+  .bg-lightgreen{
+    background-color: rgba(11, 123, 132,1);
+  }
+  .full-height{
+    height: 100vh;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .relative{
+    position: relative;
+  }
+  .mtop-1{
+    margin-top: 1em;
+  }
+  .mbottom-1{
+    margin-bottom: 1em;
+  }
+  .resp-img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .input{
+    border: none;
+    border-bottom: 1.5px solid #05005673;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 3px;
+    color: #100235;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    text-transform: inherit; 
+  }
+  .btn{
+    border: 1px solid;
+    color: #f3f3f3;
+    min-width: 5em;
+    font-size: 90%;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: 0 0 3px 1px #ff6dff;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2em;
+    margin: 0.5em;
+    padding: 0 0.8em;
+    transition: 0.3s;
+  }
+  
+  
+  /*--------------------------------------------------
+  # Animations
+  --------------------------------------------------*/
+  @keyframes animate {
+      0%,
+      100% {
+        -webkit-background-position:0% 50%;
+        -moz-background-position:0% 50%;
+        -o-background-position:0% 50%;
+        background-position:0% 50%;
+      }
+      50% {
+        -webkit-background-position:100% 50%;
+        -moz-background-position:100% 50%;
+        -o-background-position:100% 50%;
+        background-position:100% 50%;
+      }
+  }
